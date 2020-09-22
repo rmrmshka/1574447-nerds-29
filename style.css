@@ -1,0 +1,412 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --bright-red: #FB565A;
+  --red: #E74246;
+  --moderate-ted: #D7373B;
+  --vivid-green: #00CA74;
+  --lime-green: #00BC6C;
+  --dark-cyan: #00AA62;;
+  --bright-orange: #EFC849;
+  --bright-bright-orange: #EAB534;
+  --vivid-orange:#E5A722;
+  --grey: #EEEEEE;
+  --basic-white: #ffffff;
+  --dark-grayish-blue: #283136;
+  --special: #444444;
+  --light-grey: #E1E1E1;
+  --very-light-grey: #DFDFDF;
+  --very-dark-grey: #4D4D4D;
+  --light-grey-2: #D5D5D5;
+  --dimgray: #666666;
+}
+
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: "Roboto", Arial, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--dark-grayish-blue);
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+
+header{
+    background-color: var(--grey);
+}
+
+.description h2{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--basic-black);
+}
+
+/* Main navigation */
+
+.main-navigation a {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a:hover{
+    color: var(--bright-red);
+}
+.site-navigation a:focus,
+.site-navigation a:active{
+    color: var(--basic-black);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+/* User navigation */
+
+.user-navigation {
+    list-style: none;
+    color: var(--basic-black);
+    text-align: center;
+    background-color: transparent;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.user-navigation a:hover{
+    color: var(--bright-red);
+}
+.user-navigation a:focus,
+.user-navigation a:active{
+    color: var(--basic-black);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+/* Features */
+
+.feature-item h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.features-list ul{
+    list-style: none;
+}
+
+.feature-item a{
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--bright-red);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.feature-item-2 a{
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--vivid-green);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.feature-item-3 a{
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--bright-orange);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.feature-item a:hover{
+    background-color: var(--red);
+}
+.feature-item a:focus,
+.feature-item a:active{
+    background-color: var(--moderate-ted);
+}
+
+.feature-item-2 a:hover{
+    background-color: var(--lime-green);
+}
+.feature-item-2 a:focus,
+.feature-item-2 a:active{
+    background-color: var(--dark-cyan);
+}
+
+.feature-item-3 a:hover{
+    background-color: var(--bright-bright-orange);
+}
+.feature-item-3 a:focus,
+.feature-item-3 a:active{
+    background-color: var(--vivid-orange);
+}
+
+/* Button */
+
+.button{
+    width: 240;
+    height: 50;
+    background: var(--bright-red);
+    color: var(--basic-white);
+    text-decoration: none; 
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.button:hover{
+    background-color: var(--red);
+}
+.button:focus,
+.button:active{
+    background-color: var(--moderate-ted);
+}
+
+/* Index-content */
+
+.index-content h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: var(--basic-black);
+}
+.index-content ul{
+list-style: none;
+}
+.services p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-logo{
+    text-transform: uppercase;
+    color: var(--basic-black);
+    font-weight: bold;
+}
+
+.benefits-items p{
+    list-style: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.benefit-percent{
+    list-style: none;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);
+}
+
+/* Projects */
+
+.projects{
+    opacity: 0.2;
+    color: var(--basic-black);
+}
+
+.projects a:hover{
+    opacity: 1;
+}
+.projects a:focus,
+.projects a:active{
+    opacity: 0.1;
+}
+
+/* Contacts */
+
+.contacts-name{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.contacts-address{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dimgray);
+}
+
+.contacts-phone{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dimgray);
+}
+
+/* Social Button */
+
+.social-button a:hover{
+    background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+.social-button a:focus,
+.social-button a:active{
+    background: linear-gradient(0deg, var(--moderate-ted), var(--moderate-ted)), var(--basic-white);
+}
+}
+/* Footer Social */
+
+.footer-social h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-black);
+}
+
+.footer-social p{
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--special)
+}
+
+.footer-social ul{
+    list-style: none;
+    background-color: var(--light-grey) /*Временно, чтобы было видно*/
+}
+
+/* Inner Page */
+/* Main Header */
+
+.inner-page .main-header{
+    background-color: var(--grey);
+}
+
+.inner-page {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: "Roboto", Arial, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+/* User navigation */
+
+.user-navigation h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    text-transform: none;
+}
+/* Filters */
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+}
+  
+.filter ul {
+    list-style: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark-grayish-blue);
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+/* Catalog */
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-list{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dimgray);
+}
+
+.catalog-list h3 {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black)
+}
+
+.catalog-category {
+    text-transform: none;
+}
+
+.catalog-item{
+    box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.1);
+    border-radius: 5px;
+}
+
+.catalog-item li:hover{
+    box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+    border-radius: 5px;
+}
+
+/* Pagination */
+
+.pagination-list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.pagination-list a {
+    color: var(--basic-black);
+    background-color: var(--grey);
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus,
+.pagination-list a:active {
+    background-color: var(--very-light-grey);
+}
+
+.pagination-list-current a,
+.pagination-list-current a:hover,
+.pagination-list-current a:focus,
+.pagination-list-current a:active {
+  color: var(--basic-black);
+  background-color: var(--light-grey-2);
+}
