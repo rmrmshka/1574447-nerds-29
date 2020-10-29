@@ -1296,8 +1296,8 @@ input[type=checkbox]+label {
     display: none;
     top: 50%;
     left: 50%;
-    margin-left: -480px;
-    margin-top: -315px;
+    margin-left: -466px;
+    margin-top: -240px;
     width: 960px;
     height: 590px;
     background-color: var(--basic-white);
