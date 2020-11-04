@@ -665,6 +665,7 @@ td {
     margin-top: 80px;
     background-image: url("img/map.png");
     background-repeat: no-repeat;
+    background-color: var(----vivid-green);
     height: 416px;
 }
 
@@ -1234,6 +1235,7 @@ input[type=checkbox]+label {
     height: 40px;
     opacity: 0.12;
     background-image: url(../img/browser.svg);
+    background-color: var(--basic-white);
 }
 
 .catalog-item:hover::before {
