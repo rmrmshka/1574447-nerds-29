@@ -25,6 +25,17 @@
     --shade-cyan-blue: #D7DCDF;
     --gainsboro: #DFDFDF;
     --gray: #A6A6A6;
+    --gray-blue: #D7DCDE;
+    --gray86: #DBDBDB;
+    --black-opacity-03: rgba(0, 0, 0, 0.3);
+    --light-gray3: #c1c1c1;
+    --black-opacity-01: rgba(0, 1, 1, 0.1);
+    --white-opacity-03: rgba(255, 255, 255, 0.3);
+    --black-opacity-015: rgba(0, 0, 0, 0.15);
+    --black-opacity-025: rgba(0, 0, 0, 0.25);
+    --black-opacity-00001: rgba(0, 0, 0, 0.0001);
+    --black-opacity-075: rgba(0, 1, 1, .75);
+    --special-opacity-05: rgba(68, 68, 68, .5);
 }
 
 
@@ -172,7 +183,7 @@ img {
 
 .site-navigation a:active,
 .user-navigation a:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--black-opacity-03);
 }
 
 .nav-current {
@@ -301,8 +312,8 @@ img {
 }
 
 .slider-button.current {
-    -webkit-box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #c1c1c1;
-    box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #c1c1c1;
+    -webkit-box-shadow: inset 0 0 0 5px var(--basic-white), inset 0 0 0 7px var(--light-gray3);
+    box-shadow: inset 0 0 0 5px var(--basic-white), inset 0 0 0 7px var(--light-gray3);
 }
 
 .slide {
@@ -336,7 +347,8 @@ img {
 }
 
 .features-list li {
-    min-width: 300px;
+    width: 300px;
+    min-height: 340px;
 }
 
 .features-list p {
@@ -423,9 +435,9 @@ img {
 
 .button:active {
     background-color: var(--moderate-ted);
-    -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-    box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 3px 0 0 var(--black-opacity-01);
+    box-shadow: inset 0 3px 0 0 var(--black-opacity-01);
+    color: var(--white-opacity-03);
 }
 
 .learn-more-button {
@@ -663,9 +675,9 @@ td {
 .map {
     position: relative;
     margin-top: 80px;
+    background-color: var(--vivid-green);
     background-image: url("img/map.png");
     background-repeat: no-repeat;
-    background-color: var(----vivid-green);
     height: 416px;
 }
 
@@ -686,6 +698,7 @@ td {
     position: absolute;
     top: 54px;
     left: 140px;
+    width: 219px;
 }
 
 .contacts-name {
@@ -725,15 +738,15 @@ td {
 /* Social Button */
 
 .social-button a:hover {
-    background: -webkit-gradient(linear, left bottom, left top, from(#E74246), to(#E74246)), #FFFFFF;
-    background: -o-linear-gradient(bottom, #E74246, #E74246), #FFFFFF;
-    background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+    background: -webkit-gradient(linear, left bottom, left top, from(var(--red)), to(var(--red))), var(--basic-white);
+    background: -o-linear-gradient(bottom, var(--red), var(--red)), var(--basic-white);
+    background: linear-gradient(0deg, var(--red), var(--red)), var(--basic-white);
 }
 
 .social-button a:active {
-    background: -webkit-gradient(linear, left bottom, left top, from(#D7373B), to(#D7373B)), #FFFFFF;
-    background: -o-linear-gradient(bottom, #D7373B, #D7373B), #FFFFFF;
-    background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+    background: -webkit-gradient(linear, left bottom, left top, from(var(--moderate-ted)), to(var(--moderate-ted))), var(--basic-white);
+    background: -o-linear-gradient(bottom, var(--moderate-ted), var(--moderate-ted)), var(--basic-white);
+    background: linear-gradient(0deg, var(--moderate-ted), var(--moderate-ted)), var(--basic-white);
 }
 
 .social-button:active svg {
@@ -914,8 +927,8 @@ legend {
     background-color: var(--grey-67);
     border: 8px solid var(--basic-white);
     border-radius: 50%;
-    -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 2px 1px var(--black-opacity-015);
+    box-shadow: 0px 2px 1px var(--black-opacity-015);
     cursor: pointer;
     height: 4px;
     position: absolute;
@@ -1000,7 +1013,7 @@ label.max-price {
     left: -29px;
     width: 9px;
     height: 9px;
-    background-image: url(../img/Oval2.svg);
+    background-image: url(../img/oval2.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -1063,7 +1076,7 @@ input[type=checkbox]+label {
 }
 
 .filter-input-checkbox:checked+label::before {
-    background: url(../img/Square.svg);
+    background: url(../img/square.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -1098,8 +1111,8 @@ input[type=checkbox]+label {
 }
 
 .show-button:active {
-    -webkit-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    -webkit-box-shadow: inset 0px 3px 0px var(--black-opacity-01);
+    box-shadow: inset 0px 3px 0px var(--black-opacity-01);
 }
 
 
@@ -1243,8 +1256,8 @@ input[type=checkbox]+label {
 }
 
 .catalog-item:hover {
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0px var(--black-opacity-025);
+    box-shadow: 0px 4px 4px 0px var(--black-opacity-025);
 }
 
 .catalog-content {
@@ -1351,8 +1364,8 @@ input[type=checkbox]+label {
 
 .pagination-item:active {
     background-color: var(--light-grey-2);
-    -webkit-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    -webkit-box-shadow: inset 0px 3px 0px var(--black-opacity-01);
+    box-shadow: inset 0px 3px 0px var(--black-opacity-01);
 }
 
 .pagination-item:active a {
@@ -1367,8 +1380,8 @@ input[type=checkbox]+label {
 .pagination-item-current,
 .pagination-item-current:active,
 .pagination-item-current:hover {
-    border: 3px solid #DBDBDB;
-    background-color: rgba(0, 0, 0, 0.0001);
+    border: 3px solid var(--gray86);
+    background-color: var(--black-opacity-00001);
     width: 45px;
     max-height: 45px;
 }
@@ -1408,8 +1421,8 @@ input[type=checkbox]+label {
     width: 960px;
     height: 590px;
     background-color: var(--basic-white);
-    -webkit-box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
-    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
+    -webkit-box-shadow: 0 20px 40px var(--black-opacity-075);
+    box-shadow: 0 20px 40px var(--black-opacity-075);
     z-index: 30;
 }
 
@@ -1460,10 +1473,10 @@ input[type=checkbox]+label {
 
 .contact-form input,
 .contact-form textarea {
-    border: 2px solid #d7dcde;
+    border: 2px solid var(--gray-blue);
     border-radius: 1px;
     background-color: transparent;
-    color: rgba(68, 68, 68, .5);
+    color: var(--special-opacity-05);
 }
 
 .contact-form input {
