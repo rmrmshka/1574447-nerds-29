@@ -1013,7 +1013,7 @@ label.max-price {
     left: -29px;
     width: 9px;
     height: 9px;
-    background-image: url(../img/oval.svg);
+    background-image: url(../img/circle.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -1076,7 +1076,7 @@ input[type=checkbox]+label {
 }
 
 .filter-input-checkbox:checked+label::before {
-    background: url(../img/square-2.svg);
+    background: url(../img/box.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
